@@ -1,0 +1,14 @@
+:root{
+    --bg-color: #200B0B;
+    --font-main: 'Space Grotesk', sans-serif;
+}
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+}
+.sidebar{
+  background-color: white;
+}
+.portfolio{
+  background-color: white;
+}
