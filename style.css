@@ -148,3 +148,30 @@ hr {
     flex-direction: column;
     gap: 14px;
 }
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex: none;
+    position: static;
+    padding: 30px 20px;
+  }
+
+  main {
+    padding: 0;
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 18px;
+  }
+}
