@@ -1,3 +1,9 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
 :root{
     --bg-color: #200B0B;
     --font-main: 'Space Grotesk', sans-serif;
@@ -5,10 +11,140 @@
 body {
   font-family: var(--font-main);
   background-color: var(--bg-color);
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .sidebar{
-  background-color: white;
+  width: 250px;
+  position: sticky;
+  top: 20px;
+  gap: 16px;
+  padding: 40px 30px;
+  background-color: #2F0000;
+  border: 2px solid #650000;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow-wrap: anywhere;
 }
-.portfolio{
-  background-color: white;
+.layout{
+  display: flex;
+  padding: 60px;
+  gap: 40px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 20px;
+  
+}
+.pfp{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  object-position: center 0%;
+  align-self: center;
+}
+.icon {
+    height: 1.25em;
+    width: 1.5em;
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: left center;
+}
+.link-row{
+  display: flex;
+  align-items: center;
+  gap:12px;
+  
+
+}
+.link-icon {
+    height: 1.75em;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain
+}
+.link-row:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+.link-row:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+html{
+  scrollbar-color: white #650000;
+  scrollbar-width: thin;
+}
+
+.row{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 20px;
+}
+.row section{
+  flex: 1;
+}
+
+section{
+  border: 2px solid #650000;
+  background-color: #2F0000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 24px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.detail span {
+    min-width: 0;
+}
+.name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center
+}
+.title {
+    display: flex;
+    text-align: center;
+    /* gap: 8px; */
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin: 20px 0;
+}
+#experience{
+  
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
