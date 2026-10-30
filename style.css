@@ -5,7 +5,7 @@
 }
 
 :root{
-    --bg-color: #200B0B;
+    --bg-color:#121212;
     --font-main: 'Space Grotesk', sans-serif;
 }
 body {
@@ -21,8 +21,8 @@ body {
   top: 20px;
   gap: 16px;
   padding: 40px 30px;
-  background-color: #2F0000;
-  border: 2px solid #650000;
+  background-color: #282829;
+  border: 2px solid #282829;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ a{
   color: white;
 }
 html{
-  scrollbar-color: white #650000;
+  scrollbar-color: white #282829;
   scrollbar-width: thin;
 }
 
@@ -99,8 +99,8 @@ html{
 }
 
 section{
-  border: 2px solid #650000;
-  background-color: #2F0000;
+  border: 2px solid #282829;
+  background-color: #282829;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   padding: 24px;
